@@ -10,6 +10,7 @@
 
 # ---
 
+
 def encode(str)
 	return '' if str.empty?
 
