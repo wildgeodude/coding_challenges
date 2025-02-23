@@ -8,15 +8,15 @@
 # ---
 
 def well_formed?(string_value)
-	matching_brackets = { ')' => '(', ']' => '[', '}' => '{' }
-	stack = []
+  matching_brackets = { ')' => '(', ']' => '[', '}' => '{' }
+  stack = []
 
-	string_value.each_char do |char|
-		if ['(', '[', '{'].include?(char) # is an opening bracket?
-			stack.push(char)
-		elsif matching_brackets.key?(char) # is a closing bracket?
-			return puts 'Not well formed' if stack.empty? || stack.pop != matching_brackets[char]
-		end
-	end
-	puts stack.empty ? 'Not well formed' : 'Well formed'
+  string_value.each_char do |char|
+    if ['(', '[', '{'].include?(char) # is an opening bracket?
+      stack.push(char)
+    elsif matching_brackets.key?(char) # is a closing bracket?
+      return puts 'Not well formed' if stack.empty? || stack.pop != matching_brackets[char]
+    end
+  end
+  puts stack.empty ? 'Not well formed' : 'Well formed'
 end
