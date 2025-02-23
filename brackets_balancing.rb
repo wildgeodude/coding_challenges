@@ -10,6 +10,7 @@
 def well_formed?(string_value)
 	matching_brackets = { ')' => '(', ']' => '[', '}' => '{' }
 	stack = []
+
 	string_value.each_char do |char|
 		if ['(', '[', '{'].include?(char) # is an opening bracket?
 			stack.push(char)
