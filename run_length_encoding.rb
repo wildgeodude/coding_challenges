@@ -52,4 +52,3 @@ string_to_encode = 'AAAABBBCCDAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 
 encoded_string = encode(string_to_encode)
 decode(encoded_string) == string_to_encode
-
