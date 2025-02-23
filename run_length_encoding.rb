@@ -48,7 +48,7 @@ def decode(str)
 	decoded
 end
 
-# test
+# Test
 string_to_encode = 'AAAABBBCCDAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB'
 
 encoded_string = encode(string_to_encode)
